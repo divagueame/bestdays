@@ -1,0 +1,7 @@
+<p style="color: green"><%= notice %></p>
+<%= link_to "New moment", new_moment_path, data: { turbo_frame: 'chikinew'} %>
+<%= turbo_frame_tag 'chikinew' %>
+
+<div id="moments" class="grid gap-6 grid-cols-5  p-2 mt-8">
+    <%= render @moments %>
+</div>
